@@ -6,3 +6,5 @@ class GalleryScreen extends StatelessWidget {
     return Container();
   }
 }
+
+//todo images of our event with specific name of the event

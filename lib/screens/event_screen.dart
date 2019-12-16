@@ -6,3 +6,5 @@ class EventScreen extends StatelessWidget {
     return Container();
   }
 }
+
+//todo all our past and upcoming events with date topic and venue
