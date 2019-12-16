@@ -6,3 +6,5 @@ class SplashScreen extends StatelessWidget {
     return Container();
   }
 }
+
+//todo a beautiful splash screen

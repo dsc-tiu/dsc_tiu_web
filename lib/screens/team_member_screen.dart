@@ -6,3 +6,5 @@ class TeamMemberScreen extends StatelessWidget{
     return Container();
   }
 }
+
+//todo all of our members from past with bio
