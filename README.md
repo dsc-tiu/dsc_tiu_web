@@ -2,7 +2,7 @@
 
 DSC TIU Website will be live 
 
-# TO DO 
+# TO DO: 
 
 ## Home Screen 
 ## Team Screen 
