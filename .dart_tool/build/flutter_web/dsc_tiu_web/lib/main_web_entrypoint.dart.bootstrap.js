@@ -67,6 +67,7 @@ let modulePaths = {
  "packages/dsc_tiu_web/screens/home_screen": "packages/dsc_tiu_web/screens/home_screen.ddc",
  "packages/dsc_tiu_web/screens/splash_screen": "packages/dsc_tiu_web/screens/splash_screen.ddc",
  "packages/dsc_tiu_web/screens/team_member_screen": "packages/dsc_tiu_web/screens/team_member_screen.ddc",
+ "packages/dsc_tiu_web/tools/app_bar_button_model": "packages/dsc_tiu_web/tools/app_bar_button_model.ddc",
  "packages/dsc_tiu_web/tools/web_app_bar": "packages/dsc_tiu_web/tools/web_app_bar.ddc",
  "packages/flutter/animation": "packages/flutter/animation.ddc",
  "packages/flutter/cupertino": "packages/flutter/cupertino.ddc",
