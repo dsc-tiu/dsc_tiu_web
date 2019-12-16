@@ -2,8 +2,9 @@
 
 DSC TIU Website will be live 
 
-## TO DO 
+# TO DO 
 
-# Home Screen 
-# Team Screen 
-# Session Screen 
+## Home Screen 
+## Team Screen 
+## Session Screen
+## Gallery Screen
