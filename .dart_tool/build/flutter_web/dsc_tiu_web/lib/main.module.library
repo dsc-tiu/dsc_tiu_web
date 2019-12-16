@@ -1,1 +1,1 @@
-{"isEntrypoint":true,"deps":["flutter|lib/material.dart","dsc_tiu_web|lib/screens/home_screen.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":true}
+{"isEntrypoint":true,"deps":["dsc_tiu_web|lib/screens/event_screen.dart","dsc_tiu_web|lib/screens/gallery_screen.dart","dsc_tiu_web|lib/screens/splash_screen.dart","dsc_tiu_web|lib/screens/team_member_screen.dart","flutter|lib/material.dart","dsc_tiu_web|lib/screens/home_screen.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":true}

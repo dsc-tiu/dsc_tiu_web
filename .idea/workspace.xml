@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35bddd85-430f-48dc-ab3f-f5443b7d4f5e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/event_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/event_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/gallery_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/gallery_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/dsc_logo_horizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tools/web_app_bar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/.flutter_web.meta_module.clean" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/.flutter_web.meta_module.clean" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/.flutter_web.meta_module.raw" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/.flutter_web.meta_module.raw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main.flutter_web.module" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main.flutter_web.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main_web_entrypoint.dart.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main_web_entrypoint.dart.bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main_web_entrypoint.digests" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main_web_entrypoint.digests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/preferences" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/preferences" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/splash_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/team_member_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/team_member_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -28,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315">
-              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            <state relative-caret-position="62">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -38,37 +50,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/screens/gallery_screen.dart">
+        <entry file="file://$PROJECT_DIR$/lib/tools/web_app_bar.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/screens/event_screen.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/screens/team_member_screen.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/screens/splash_screen.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+            <state relative-caret-position="270">
+              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -76,8 +61,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/screens/home_screen.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+            <state relative-caret-position="47">
+              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,6 +96,8 @@
         <option value="$PROJECT_DIR$/lib/screens/event_screen.dart" />
         <option value="$PROJECT_DIR$/lib/screens/team_member_screen.dart" />
         <option value="$PROJECT_DIR$/lib/screens/splash_screen.dart" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/lib/tools/web_app_bar.dart" />
         <option value="$PROJECT_DIR$/lib/screens/home_screen.dart" />
       </list>
     </option>
@@ -136,18 +126,18 @@
             <path>
               <item name="dsc_tiu_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="dsc_tiu_web" type="462c0819:PsiDirectoryNode" />
+              <item name="asset" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dsc_tiu_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dsc_tiu_web" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dsc_tiu_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="dsc_tiu_web" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsc_tiu_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dsc_tiu_web" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -220,10 +210,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1376" height="784" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17741935" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17741935" />
       <window_info id="Captures" order="1" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -238,11 +227,11 @@
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" />
       <window_info anchor="bottom" id="Debug" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.6910299" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.6910299" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.8421927" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.5730897" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -267,16 +256,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -308,10 +287,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/asset/dsc_logo_horizontal.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tools/web_app_bar.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/screens/home_screen.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        <state relative-caret-position="47">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
