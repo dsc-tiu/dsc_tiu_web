@@ -1,1 +1,1 @@
-{"p":["dsc_tiu_web","lib/tools/web_app_bar.dart"],"s":[["dsc_tiu_web","lib/tools/web_app_bar.dart"]],"d":[["flutter","lib/material.dart"]],"m":false,"is":true,"pf":"flutter_web"}
+{"p":["dsc_tiu_web","lib/tools/web_app_bar.dart"],"s":[["dsc_tiu_web","lib/tools/web_app_bar.dart"]],"d":[["dsc_tiu_web","lib/tools/app_bar_button_model.dart"],["flutter","lib/cupertino.dart"],["flutter","lib/material.dart"]],"m":false,"is":true,"pf":"flutter_web"}
