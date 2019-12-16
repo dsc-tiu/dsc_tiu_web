@@ -1,4 +1,5 @@
 import 'package:dsc_tiu_web/tools/app_bar_button_model.dart';
+import 'package:dsc_tiu_web/utils/google_colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,14 +11,34 @@ class WebAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Image.asset('asset/dsc_logo_horizontal.png',height: 40.0,),
+          Image.asset(
+            'asset/dsc_logo_horizontal.png',
+            height: 40.0,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-              AppBarButtonModel(buttonName: 'Event'),
-              AppBarButtonModel(buttonName: 'Gallery'),
-              AppBarButtonModel(buttonName: 'About Us'),
-              AppBarButtonModel(buttonName: 'Contact Us'),
+              AppBarButtonModel(
+                buttonName: 'Event',
+                hoverColor: GoogleColors.blue,
+                onPressed: () => Navigator.pushNamed(context, '/event-screen'),
+              ),
+              AppBarButtonModel(
+                buttonName: 'Gallery',
+                hoverColor: GoogleColors.red,
+                onPressed: () =>
+                    Navigator.pushNamed(context, '/gallery-screen'),
+              ),
+              AppBarButtonModel(
+                buttonName: 'About Us',
+                hoverColor: GoogleColors.green,
+                onPressed: () => Navigator.pushNamed(context, '/team-member-screen'),
+              ),
+              AppBarButtonModel(
+                buttonName: 'Contact Us',
+                hoverColor: GoogleColors.yellow,
+                onPressed: () => Navigator.pushNamed(context, '/contact-screen'),
+              ),
             ],
           ),
         ],
