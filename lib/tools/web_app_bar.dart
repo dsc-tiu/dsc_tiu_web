@@ -13,7 +13,7 @@ class WebAppBar extends StatelessWidget {
         children: <Widget>[
           Image.asset(
             'asset/dsc_logo_horizontal.png',
-            height: 40.0,
+            height: 50.0,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,

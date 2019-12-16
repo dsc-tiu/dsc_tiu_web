@@ -14,8 +14,12 @@ class AppBarButtonModel extends StatefulWidget {
 
   @override
   _AppBarButtonModelState createState() =>
-      _AppBarButtonModelState(buttonName, onPressed, hoverColor);
-}
+   _AppBarButtonModelState(
+        buttonName,
+        onPressed,
+        hoverColor,
+      );
+  }
 
 class _AppBarButtonModelState extends State<AppBarButtonModel> {
   final String buttonName;
