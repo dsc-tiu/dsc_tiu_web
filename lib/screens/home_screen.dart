@@ -54,6 +54,10 @@ class HomeScreen extends StatelessWidget {
                       ]
                     ),
                   ),
+                  Image(
+                    height: 230.0,
+                    image: AssetImage('asset/home_screen_bottom.gif',),
+                  )
                 ],
               ),
             ),
