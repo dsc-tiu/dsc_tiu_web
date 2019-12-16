@@ -1,36 +1,65 @@
 import 'package:flutter/material.dart';
 
-class AppBarButtonModel extends StatelessWidget {
+class AppBarButtonModel extends StatefulWidget {
   final String buttonName;
+  final Function onPressed;
+  final Color hoverColor;
 
   const AppBarButtonModel({
     Key key,
     @required this.buttonName,
+    this.onPressed,
+    @required this.hoverColor,
   }) : super(key: key);
 
   @override
+  _AppBarButtonModelState createState() =>
+      _AppBarButtonModelState(buttonName, onPressed, hoverColor);
+}
+
+class _AppBarButtonModelState extends State<AppBarButtonModel> {
+  final String buttonName;
+  final Function onPressed;
+  final Color hoverColor;
+  bool isHovering;
+  @override
+  void initState() {
+    isHovering = false;
+    super.initState();
+  }
+
+  _AppBarButtonModelState(this.buttonName, this.onPressed, this.hoverColor);
+  @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(
-        horizontal: 20.0,
-      ),
-      child: Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          border: Border.all(
-            color: Colors.grey[700],
-          ),
-          borderRadius: BorderRadius.circular(30.0),
-        ),
-        child: Padding(
+    return Material(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+      child: InkWell(
+        onTap: onPressed,
+        hoverColor: Colors.transparent,
+        splashColor: hoverColor.withOpacity(0.3),
+        onHover: (_isHovering) {
+          setState(() {
+            isHovering = _isHovering ?? false;
+          });
+        },
+        child: Container(
+          // decoration: BoxDecoration(
+          //   color: Colors.white,
+          //   border: Border.all(
+          //     color: Colors.grey[700],
+          //   ),
+          //   borderRadius: BorderRadius.circular(30.0),
+          // ),
           padding: const EdgeInsets.symmetric(
             horizontal: 10.0,
             vertical: 5.0,
           ),
+          margin: const EdgeInsets.symmetric(horizontal: 12.0),
           child: Text(
             buttonName,
+            textScaleFactor: isHovering ? 1.5 : 1,
             style: TextStyle(
-              color: Colors.grey[900],
+              color: isHovering ? hoverColor : Colors.black,
             ),
           ),
         ),
