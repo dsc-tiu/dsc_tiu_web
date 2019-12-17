@@ -13,13 +13,12 @@ class AppBarButtonModel extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _AppBarButtonModelState createState() =>
-   _AppBarButtonModelState(
+  _AppBarButtonModelState createState() => _AppBarButtonModelState(
         buttonName,
         onPressed,
         hoverColor,
       );
-  }
+}
 
 class _AppBarButtonModelState extends State<AppBarButtonModel> {
   final String buttonName;
@@ -36,10 +35,12 @@ class _AppBarButtonModelState extends State<AppBarButtonModel> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+      elevation: 0.0,
+      color: Colors.white,
+      borderRadius: BorderRadius.circular(10.0),
       child: InkWell(
         onTap: onPressed,
-        hoverColor: Colors.transparent,
+        hoverColor: Colors.white,
         splashColor: hoverColor.withOpacity(0.3),
         onHover: (_isHovering) {
           setState(() {
