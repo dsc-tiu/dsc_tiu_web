@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
 class WebAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container(
+      color: Colors.white,
       padding: const EdgeInsets.all(8.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -21,7 +22,8 @@ class WebAppBar extends StatelessWidget {
               AppBarButtonModel(
                 buttonName: 'Event',
                 hoverColor: GoogleColors.blue,
-                onPressed: () => Navigator.pushNamed(context, '/event-screen'),
+                onPressed: () =>
+                    Navigator.pushNamed(context, '/event-screen'),
               ),
               AppBarButtonModel(
                 buttonName: 'Gallery',
@@ -32,12 +34,14 @@ class WebAppBar extends StatelessWidget {
               AppBarButtonModel(
                 buttonName: 'About Us',
                 hoverColor: GoogleColors.green,
-                onPressed: () => Navigator.pushNamed(context, '/team-member-screen'),
+                onPressed: () =>
+                    Navigator.pushNamed(context, '/team-member-screen'),
               ),
               AppBarButtonModel(
                 buttonName: 'Contact Us',
                 hoverColor: GoogleColors.yellow,
-                onPressed: () => Navigator.pushNamed(context, '/contact-screen'),
+                onPressed: () =>
+                    Navigator.pushNamed(context, '/contact-screen'),
               ),
             ],
           ),
