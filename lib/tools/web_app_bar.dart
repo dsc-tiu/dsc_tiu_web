@@ -12,15 +12,17 @@ class WebAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          InkWell(
-            splashColor: Colors.blue,
-            borderRadius: BorderRadius.circular(100.0),
-            onTap: (){
-              Navigator.of(context).pushNamed('/');
-            },
-            child: Image.asset(
-              'asset/dsc_logo_horizontal.png',
-              height: 50.0,
+          Material(
+            child: InkWell(
+              splashColor: Colors.blue,
+              borderRadius: BorderRadius.circular(100.0),
+              onTap: () {
+                Navigator.of(context).pushNamed('/');
+              },
+              child: Image.asset(
+                'asset/dsc_logo_horizontal.png',
+                height: 50.0,
+              ),
             ),
           ),
           Row(
@@ -29,8 +31,7 @@ class WebAppBar extends StatelessWidget {
               AppBarButtonModel(
                 buttonName: 'Event',
                 hoverColor: GoogleColors.blue,
-                onPressed: () =>
-                    Navigator.pushNamed(context, '/event-screen'),
+                onPressed: () => Navigator.pushNamed(context, '/event-screen'),
               ),
               AppBarButtonModel(
                 buttonName: 'Gallery',
