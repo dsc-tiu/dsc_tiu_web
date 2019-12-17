@@ -12,9 +12,16 @@ class WebAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Image.asset(
-            'asset/dsc_logo_horizontal.png',
-            height: 50.0,
+          InkWell(
+            splashColor: Colors.blue,
+            borderRadius: BorderRadius.circular(100.0),
+            onTap: (){
+              Navigator.of(context).pushNamed('/');
+            },
+            child: Image.asset(
+              'asset/dsc_logo_horizontal.png',
+              height: 50.0,
+            ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
