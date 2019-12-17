@@ -2,24 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35bddd85-430f-48dc-ab3f-f5443b7d4f5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/asset/home_screen_background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/tools/app_bar_button_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/d1c944ae8cc5eb04422d522d0366b4d1/asset_graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/d1c944ae8cc5eb04422d522d0366b4d1/asset_graph.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/.flutter_web.meta_module.clean" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/.flutter_web.meta_module.clean" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/.flutter_web.meta_module.raw" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/.flutter_web.meta_module.raw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main_web_entrypoint.digests" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/main_web_entrypoint.digests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/screens/home_screen.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/screens/home_screen.ddc.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/screens/home_screen.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/screens/home_screen.ddc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/screens/home_screen.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/screens/home_screen.ddc.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/screens/home_screen.flutter_web.module" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/screens/home_screen.flutter_web.module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/screens/home_screen.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/screens/home_screen.module.library" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/tools/web_app_bar.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/tools/web_app_bar.ddc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/tools/web_app_bar.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/flutter_web/dsc_tiu_web/lib/tools/web_app_bar.ddc.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/preferences" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/preferences" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/android_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/aog_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/cloud_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/event_background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/flutter_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/ml_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asset/web_logo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tools/web_app_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tools/web_app_bar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/event_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/event_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tools/app_bar_button_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tools/app_bar_button_model.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -40,41 +33,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/tools/web_app_bar.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#61#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-45">
+              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/tools/app_bar_button_model.dart">
+        <entry file="file://$PROJECT_DIR$/lib/screens/event_screen.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/screens/home_screen.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="160">
+              <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -103,15 +72,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/screens/gallery_screen.dart" />
-        <option value="$PROJECT_DIR$/lib/screens/event_screen.dart" />
         <option value="$PROJECT_DIR$/lib/screens/team_member_screen.dart" />
         <option value="$PROJECT_DIR$/lib/screens/splash_screen.dart" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/lib/screens/home_screen.dart" />
         <option value="$PROJECT_DIR$/lib/tools/web_app_bar.dart" />
         <option value="$PROJECT_DIR$/lib/tools/app_bar_button_model.dart" />
+        <option value="$PROJECT_DIR$/lib/main.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/event_screen.dart" />
       </list>
     </option>
   </component>
@@ -162,9 +131,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,12 +197,20 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17741935" />
-      <window_info id="Captures" order="1" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4969697" visible="true" weight="0.17741935" />
+      <window_info id="Captures" order="1" sideWeight="0.5030303" side_tool="true" weight="0.17741935" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -241,13 +218,14 @@
       <window_info id="Resources Explorer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.320598" />
       <window_info anchor="bottom" id="Run" order="1" />
-      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32890365" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" />
       <window_info anchor="bottom" id="Debug" order="5" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.45182723" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.3604651" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -286,13 +264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/screens/event_screen.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/screens/team_member_screen.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -317,40 +288,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/screens/home_screen.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tools/web_app_bar.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1035">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tools/app_bar_button_model.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="1320">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tools/web_app_bar.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/web_logo.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/event_screen.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
