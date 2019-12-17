@@ -47,13 +47,6 @@ class _AppBarButtonModelState extends State<AppBarButtonModel> {
           });
         },
         child: Container(
-          // decoration: BoxDecoration(
-          //   color: Colors.white,
-          //   border: Border.all(
-          //     color: Colors.grey[700],
-          //   ),
-          //   borderRadius: BorderRadius.circular(30.0),
-          // ),
           padding: const EdgeInsets.symmetric(
             horizontal: 10.0,
             vertical: 5.0,
