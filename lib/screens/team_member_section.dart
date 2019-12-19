@@ -1,7 +1,15 @@
+import 'dart:convert';
+
 import 'package:dsc_tiu_web/tools/team_member_model.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class TeamMemberSection extends StatelessWidget {
+class TeamMemberSection extends StatefulWidget {
+  @override
+  _TeamMemberSectionState createState() => _TeamMemberSectionState();
+}
+
+class _TeamMemberSectionState extends State<TeamMemberSection> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -23,21 +31,24 @@ class TeamMemberSection extends StatelessWidget {
           Container(
             height: MediaQuery.of(context).size.height / 2,
             width: MediaQuery.of(context).size.width / 2 ,
-            child: Padding(
-              padding: const EdgeInsets.only(left:40.0),
-              child: ListView.builder(
-                physics: BouncingScrollPhysics(),
-                padding: EdgeInsets.only(left: 40.0),
-                scrollDirection: Axis.horizontal,
-                itemCount: 6,
-                itemBuilder: (_, int index) {
-                  return TeamMemberModel(
-                    memberPic: null,
-                    memberName: null,
-                    memberDesignation: null,
-                  );
-                },
-              ),
+            child: FutureBuilder(
+              future: DefaultAssetBundle.of(context).loadString('load_json/member_details.json'),
+              builder: (context,snapshot){
+                var members = json.decode(snapshot.data.toString());
+                return ListView.builder(
+                  physics: BouncingScrollPhysics(),
+                  padding: EdgeInsets.only(left: 40.0),
+                  scrollDirection: Axis.horizontal,
+                  itemCount: members == null ? 0 : members.length,
+                  itemBuilder: (_, int index) {
+                    return TeamMemberModel(
+                      memberPic: members[index]['memberPic'],
+                      memberName: members[index]['memberName'],
+                      memberDesignation: members[index]['designation'],
+                    );
+                  },
+                );
+              },
             ),
           ),
         ],
