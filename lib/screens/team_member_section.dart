@@ -1,3 +1,4 @@
+import 'package:dsc_tiu_web/tools/team_member_model.dart';
 import 'package:flutter/material.dart';
 
 class TeamMemberSection extends StatelessWidget {
