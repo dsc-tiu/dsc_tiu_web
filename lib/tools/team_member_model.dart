@@ -21,28 +21,34 @@ class TeamMemberModel extends StatelessWidget {
         right: 10.0,
         bottom: 8.0,
       ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(10.0),
+      child: Card(
         clipBehavior: Clip.hardEdge,
+        color: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20.0),
+        ),
+        elevation: 3,
+        borderOnForeground: false,
         child: Container(
-          width: 250.0,
-          color: Colors.blueGrey[200],
-
+          width: 240.0,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[     //wait
               CircleAvatar(
                   radius: 70.0,
                   backgroundImage: AssetImage(memberPic),
               ),
               SizedBox(
-                height: 30.0,
+                height: 25.0,
               ),
               Text(memberName,style: TextStyle(
-                fontSize: 30.0,
-              ),),
-              Text(memberDesignation,style: TextStyle(
                 fontSize: 25.0,
+              ),),
+              Text(memberDesignation,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                fontSize: 20.0,
               ),),
             ],
           ),

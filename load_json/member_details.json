@@ -1,27 +1,42 @@
 [
   {
     "memberPic" : "asset/cloud_logo.png",
-    "memberName" : "abc",
-    "designation" : "ab"
+    "memberName" : "Ishan Ghosh",
+    "designation" : "Faculty Coordinator"
   },
   {
     "memberPic" : "asset/cloud_logo.png",
-    "memberName" : "abcd",
-    "designation" : "abc"
+    "memberName" : "Atri Das",
+    "designation" : "DSC Lead | Mentor - Flutter & Android"
   },
   {
     "memberPic" : "asset/cloud_logo.png",
-    "memberName" : "abcss",
-    "designation" : "asb"
+    "memberName" : "Shoili Chowdhury",
+    "designation" : "Mentor - Flutter | Google Cloud"
   },
   {
     "memberPic" : "asset/cloud_logo.png",
-    "memberName" : "abshgc",
-    "designation" : "aqsb"
+    "memberName" : "Soumyadip Sinha",
+    "designation" : "Mentor - Flutter"
   },
   {
     "memberPic" : "asset/cloud_logo.png",
-    "memberName" : "abahc",
-    "designation" : "abo"
+    "memberName" : "Subhajit Maji",
+    "designation" : "Mentor - Web"
+  },
+  {
+    "memberPic" : "asset/cloud_logo.png",
+    "memberName" : "Rupam Paul",
+    "designation" : "ML Facilitator"
+  },
+  {
+    "memberPic" : "asset/cloud_logo.png",
+    "memberName" : "Hriyam Dutta",
+    "designation" : "Public Relation Manager"
+  },
+  {
+    "memberPic" : "asset/cloud_logo.png",
+    "memberName" : "Rishav Ghosh",
+    "designation" : "Public Relation Manager"
   }
 ]

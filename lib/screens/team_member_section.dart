@@ -30,10 +30,11 @@ class _TeamMemberSectionState extends State<TeamMemberSection> {
           ),
           Container(
             height: MediaQuery.of(context).size.height / 2,
-            width: MediaQuery.of(context).size.width / 2 ,
+            width: MediaQuery.of(context).size.width / 2,
             child: FutureBuilder(
-              future: DefaultAssetBundle.of(context).loadString('load_json/member_details.json'),
-              builder: (context,snapshot){
+              future: DefaultAssetBundle.of(context)
+                  .loadString('load_json/member_details.json'),
+              builder: (context, snapshot) {
                 var members = json.decode(snapshot.data.toString());
                 return ListView.builder(
                   physics: BouncingScrollPhysics(),
@@ -41,10 +42,13 @@ class _TeamMemberSectionState extends State<TeamMemberSection> {
                   scrollDirection: Axis.horizontal,
                   itemCount: members == null ? 0 : members.length,
                   itemBuilder: (_, int index) {
-                    return TeamMemberModel(
-                      memberPic: members[index]['memberPic'],
-                      memberName: members[index]['memberName'],
-                      memberDesignation: members[index]['designation'],
+                    return Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: TeamMemberModel(
+                        memberPic: members[index]['memberPic'],
+                        memberName: members[index]['memberName'],
+                        memberDesignation: members[index]['designation'],
+                      ),
                     );
                   },
                 );
