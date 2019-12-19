@@ -28,9 +28,12 @@ class TeamMemberScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                       vertical: 10.0,
                     ),
-                    child: Container(
-                      height: MediaQuery.of(context).size.height / 3,
-                      color: Colors.amber,
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Container(
+                        height: MediaQuery.of(context).size.height / 2,
+                        color: Colors.amber,
+                      ),
                     ),
                   ),
                   // todo ListView team member
