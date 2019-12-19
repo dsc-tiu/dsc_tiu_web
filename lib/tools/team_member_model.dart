@@ -24,16 +24,16 @@ class TeamMemberModel extends StatelessWidget {
         bottom: 8.0,
       ),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(20.0),
+        borderRadius: BorderRadius.circular(10.0),
         clipBehavior: Clip.hardEdge,
         child: Container(
-          width: 300.0,
+          width: 250.0,
           color: Colors.blueGrey[200],
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
-                radius: 80.0,
+                radius: 70.0,
                 backgroundColor: Colors.blueGrey[900]
               ),
               SizedBox(
@@ -43,7 +43,7 @@ class TeamMemberModel extends StatelessWidget {
                 fontSize: 30.0,
               ),),
               Text('Member Designation',style: TextStyle(
-                fontSize: 30.0,
+                fontSize: 25.0,
               ),),
             ],
           ),
