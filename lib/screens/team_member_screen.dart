@@ -13,6 +13,7 @@ class TeamMemberScreen extends StatelessWidget {
           Expanded(
             child: Container(
               child: ListView(
+                physics: BouncingScrollPhysics(),
                 children: <Widget>[
                   //todo About Us
                   Center(
