@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class TeamMemberModel extends StatelessWidget {
@@ -29,20 +27,21 @@ class TeamMemberModel extends StatelessWidget {
         child: Container(
           width: 250.0,
           color: Colors.blueGrey[200],
+
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+            children: <Widget>[     //wait
               CircleAvatar(
-                radius: 70.0,
-                backgroundColor: Colors.blueGrey[900]
+                  radius: 70.0,
+                  backgroundImage: AssetImage(memberPic),
               ),
               SizedBox(
                 height: 30.0,
               ),
-              Text('Member Name',style: TextStyle(
+              Text(memberName,style: TextStyle(
                 fontSize: 30.0,
               ),),
-              Text('Member Designation',style: TextStyle(
+              Text(memberDesignation,style: TextStyle(
                 fontSize: 25.0,
               ),),
             ],
