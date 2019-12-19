@@ -35,7 +35,6 @@ class TeamMemberModel extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              //wait
               CircleAvatar(
                 radius: 70.0,
                 backgroundImage: AssetImage(memberPic),

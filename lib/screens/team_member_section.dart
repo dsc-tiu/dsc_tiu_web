@@ -20,11 +20,14 @@ class _TeamMemberSectionState extends State<TeamMemberSection> {
           Container(
             height: MediaQuery.of(context).size.height / 2,
             width: MediaQuery.of(context).size.width / 2 - 100,
-            child: Text(
-              'Meet with our Team........',
-              style: TextStyle(
-                fontSize: 80.0,
-                color: Colors.blueAccent,
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Text(
+                'Meet with our Team........',
+                style: TextStyle(
+                  fontSize: 80.0,
+                  color: Colors.amber[400],
+                ),
               ),
             ),
           ),
