@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35bddd85-430f-48dc-ab3f-f5443b7d4f5e" name="Default Changelist" comment="fixes the error">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+    <list default="true" id="35bddd85-430f-48dc-ab3f-f5443b7d4f5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generated_plugin_registrant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generated_plugin_registrant.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/contact_us_screen.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/team_member_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/team_member_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -42,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/screens/team_member_screen.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="45">
+              <caret line="35" column="64" lean-forward="true" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -189,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576470600190</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adds stuff to team member screen">
+      <created>1576770865279</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576770865279</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -203,7 +204,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4969697" visible="true" weight="0.17741935" />
       <window_info id="Captures" order="1" sideWeight="0.5030303" side_tool="true" weight="0.17741935" />
@@ -240,7 +240,8 @@
     <MESSAGE value="initial upload" />
     <MESSAGE value="creates the home screen" />
     <MESSAGE value="fixes the error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes the error" />
+    <MESSAGE value="adds stuff to team member screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds stuff to team member screen" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -296,8 +297,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/screens/team_member_screen.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="45">
+          <caret line="35" column="64" lean-forward="true" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
