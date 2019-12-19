@@ -1,4 +1,3 @@
-import 'package:dsc_tiu_web/screens/contact_us_screen.dart';
 import 'package:dsc_tiu_web/screens/event_screen.dart';
 import 'package:dsc_tiu_web/screens/gallery_screen.dart';
 import 'package:dsc_tiu_web/screens/splash_screen.dart';
@@ -9,14 +8,13 @@ import 'screens/home_screen.dart';
 main() => runApp(
       MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: '/event-screen',
+        initialRoute: '/team-member-screen',
         routes: {
           '/': (_) => HomeScreen(),
           '/splash-screen': (_) => SplashScreen(),
           '/gallery-screen':(_)=>GalleryScreen(),
           '/event-screen': (_) => EventScreen(),
           '/team-member-screen': (_) => TeamMemberScreen(),
-          '/contact-screen':(_) => ContactUsScreen(),
         },
       ),
 );
