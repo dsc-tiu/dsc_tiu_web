@@ -25,7 +25,7 @@ class AboutUsSection extends StatelessWidget {
                 'That is 50 - 60 now. But we are happy with their contribution to the Community.',
                   style: TextStyle(
                     fontSize: 24.0,
-                    color: Colors.blueAccent,
+                    color: Colors.blue,
                   ),
                 ),
               ],

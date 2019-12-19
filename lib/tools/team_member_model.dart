@@ -46,6 +46,8 @@ class TeamMemberModel extends StatelessWidget {
                 memberName,
                 style: TextStyle(
                   fontSize: 25.0,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w400,
                 ),
               ),
               Divider(),
@@ -54,6 +56,7 @@ class TeamMemberModel extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 20.0,
+                  color: Colors.blue[700]
                 ),
               ),
             ],
