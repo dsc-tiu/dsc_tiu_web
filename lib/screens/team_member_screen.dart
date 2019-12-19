@@ -19,12 +19,36 @@ class TeamMemberScreen extends StatelessWidget {
                     color: Colors.grey[600],
                   ),),
                   // todo About Us details
+                  Container(
+                    height: MediaQuery.of(context).size.height/3.5,
+                    color: Colors.amber,
+                  ),
                   // todo meet our team
-                  Text('Meet our Team............',style: TextStyle(
-                    fontSize: 50.0,
-                    color: Colors.grey[600],
-                  ),),
+                  Center(
+                    child: Text('Meet our Team............',
+                      style: TextStyle(
+                      fontSize: 50.0,
+                      color: Colors.grey[600],
+                    ),),
+                  ),
                   // todo ListView team member
+                  Container(
+                    height: MediaQuery.of(context).size.height/2,
+                    color: Colors.lightGreen[200],
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 6,
+                      itemBuilder: (_,int index){
+                        return Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            width: 300.0,
+                            color: Colors.amberAccent,
+                          ),
+                        );
+                      },
+                    ),
+                  ),
                   // todo contact us
                   Text('To Reach Us............',style: TextStyle(
                     fontSize: 50.0,
