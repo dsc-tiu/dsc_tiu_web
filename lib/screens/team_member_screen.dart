@@ -1,6 +1,7 @@
-import 'package:dsc_tiu_web/tools/team_member_model.dart';
 import 'package:dsc_tiu_web/tools/web_app_bar.dart';
 import 'package:flutter/material.dart';
+import 'about_us_section.dart';
+import 'team_member_section.dart';
 
 class TeamMemberScreen extends StatelessWidget {
   @override
@@ -24,51 +25,9 @@ class TeamMemberScreen extends StatelessWidget {
                     ),
                   ),
                   // todo About Us details
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 10.0,
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: Container(
-                        height: MediaQuery.of(context).size.height / 2,
-                        color: Colors.amber,
-                      ),
-                    ),
-                  ),
+                  AboutUsSection(),
                   // todo ListView team member
-                  Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Container(
-                          height: MediaQuery.of(context).size.height / 2,
-                          width: MediaQuery.of(context).size.width/2-150,
-                          child: Text('Meet with our Team........',style: TextStyle(
-                            fontSize: 80.0,
-                            color: Colors.blueAccent,
-                          ),),
-                        ),
-                        Container(
-                          height: MediaQuery.of(context).size.height / 2,
-                          width: MediaQuery.of(context).size.width/2,
-                          child: ListView.builder(
-                            physics: BouncingScrollPhysics(),
-                            scrollDirection: Axis.horizontal,
-                            itemCount: 6,
-                            itemBuilder: (_, int index) {
-                              return TeamMemberModel(
-                                memberPic: null,
-                                memberName: null,
-                                memberDesignation: null,
-                              );
-                            },
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                  TeamMemberSection(),
                 ],
               ),
             ),
@@ -78,5 +37,3 @@ class TeamMemberScreen extends StatelessWidget {
     );
   }
 }
-
-//todo all of our members from past with bio
