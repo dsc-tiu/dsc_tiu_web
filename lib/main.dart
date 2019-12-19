@@ -20,3 +20,7 @@ main() => runApp(
         },
       ),
 );
+
+//todo 1. internal Json for Team Members
+// todo 2. add some shadow or elevation to team member model
+// todo 3. add and about us text for DSC TIU
