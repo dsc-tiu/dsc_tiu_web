@@ -1,3 +1,4 @@
+import 'package:dsc_tiu_web/tools/team_member_model.dart';
 import 'package:dsc_tiu_web/tools/web_app_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -10,76 +11,58 @@ class TeamMemberScreen extends StatelessWidget {
           WebAppBar(),
           Expanded(
             child: Container(
-              color: Colors.blue,
               child: ListView(
                 children: <Widget>[
                   //todo About Us
-                  Text('About Us............',style: TextStyle(
-                    fontSize: 50.0,
-                    color: Colors.grey[600],
-                  ),),
-                  // todo About Us details
-                  Container(
-                    height: MediaQuery.of(context).size.height/3.5,
-                    color: Colors.amber,
-                  ),
-                  // todo meet our team
                   Center(
-                    child: Text('Meet our Team............',
+                    child: Text(
+                      'About Us............',
                       style: TextStyle(
-                      fontSize: 50.0,
-                      color: Colors.grey[600],
-                    ),),
-                  ),
-                  // todo ListView team member
-                  Container(
-                    height: MediaQuery.of(context).size.height/2,
-                    color: Colors.lightGreen[200],
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: 6,
-                      itemBuilder: (_,int index){
-                        return Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
-                            width: 300.0,
-                            color: Colors.amberAccent,
-                          ),
-                        );
-                      },
+                        fontSize: 80.0,
+                        color: Colors.grey[600],
+                      ),
                     ),
                   ),
-                  // todo contact us
-                  Text('To Reach Us............',style: TextStyle(
-                    fontSize: 50.0,
-                    color: Colors.grey[600],
-                  ),),
-                  // todo ListView contact details
-                  Container(
-                    color: Colors.red,
-                    height: MediaQuery.of(context).size.height/4,
-                    child: ListView(
+                  // todo About Us details
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 10.0,
+                    ),
+                    child: Container(
+                      height: MediaQuery.of(context).size.height / 3,
+                      color: Colors.amber,
+                    ),
+                  ),
+                  // todo ListView team member
+                  Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        Text('Facebook',style: TextStyle(
-                          fontSize: 30.0,
-                          color: Colors.grey[600],
-                        ),),
-                        Text('Twitter',style: TextStyle(
-                          fontSize: 30.0,
-                          color: Colors.grey[600],
-                        ),),
-                        Text('Github',style: TextStyle(
-                          fontSize: 30.0,
-                          color: Colors.grey[600],
-                        ),),
-                        Text('Gmail',style: TextStyle(
-                          fontSize: 30.0,
-                          color: Colors.grey[600],
-                        ),),
-                        Text('Linkedin',style: TextStyle(
-                          fontSize: 30.0,
-                          color: Colors.grey[600],
-                        ),),
+                        Container(
+                          height: MediaQuery.of(context).size.height / 2,
+                          width: MediaQuery.of(context).size.width/2-150,
+                          child: Text('Meet with our Team........',style: TextStyle(
+                            fontSize: 80.0,
+                            color: Colors.blueAccent,
+                          ),),
+                        ),
+                        Container(
+                          height: MediaQuery.of(context).size.height / 2,
+                          width: MediaQuery.of(context).size.width/2,
+                          child: ListView.builder(
+                            physics: BouncingScrollPhysics(),
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 6,
+                            itemBuilder: (_, int index) {
+                              return TeamMemberModel(
+                                memberPic: null,
+                                memberName: null,
+                                memberDesignation: null,
+                              );
+                            },
+                          ),
+                        ),
                       ],
                     ),
                   ),
