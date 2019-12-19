@@ -34,22 +34,29 @@ class TeamMemberModel extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[     //wait
+            children: <Widget>[
+              //wait
               CircleAvatar(
-                  radius: 70.0,
-                  backgroundImage: AssetImage(memberPic),
+                radius: 70.0,
+                backgroundImage: AssetImage(memberPic),
               ),
               SizedBox(
                 height: 25.0,
               ),
-              Text(memberName,style: TextStyle(
-                fontSize: 25.0,
-              ),),
-              Text(memberDesignation,
+              Text(
+                memberName,
+                style: TextStyle(
+                  fontSize: 25.0,
+                ),
+              ),
+              Divider(),
+              Text(
+                memberDesignation,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                fontSize: 20.0,
-              ),),
+                  fontSize: 20.0,
+                ),
+              ),
             ],
           ),
         ),
