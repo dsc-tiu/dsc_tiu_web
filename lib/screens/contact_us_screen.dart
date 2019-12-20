@@ -11,15 +11,18 @@ class ContactUsScreen extends StatelessWidget {
           Expanded(
             child: Container(
               color: Colors.blueAccent,
-              child: Align(
-                alignment: Alignment.centerRight,
-                child: Container(
-                  margin: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height/3,
-                    left: MediaQuery.of(context).size.width/2,
+              child: Row(
+                children: <Widget>[
+                  Image.asset('asset/dsc_contact.jpg'),
+                  Align(
+                    alignment: Alignment.bottomRight,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height/2,
+                      width: MediaQuery.of(context).size.width/2,
+                      color: Colors.greenAccent,
+                    ),
                   ),
-                  color: Colors.greenAccent,
-                ),
+                ],
               ),
             ),
           ),
