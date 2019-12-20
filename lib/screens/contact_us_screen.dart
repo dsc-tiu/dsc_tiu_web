@@ -16,25 +16,43 @@ class ContactUsScreen extends StatelessWidget {
                   Image.asset('asset/dsc_contact.jpg'),
                   Spacer(),
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       RichText(
                         text: TextSpan(
-                          text: ' to ',
+                          text: ' to',
+                          style: TextStyle(
+                            fontSize: 40.0,
+                            color: Colors.green,
+                          ),
                           children: <TextSpan>[
                             TextSpan(
-                              text: ' get ',
+                              text: ' get \n',
+                                style: TextStyle(
+                                  fontSize: 80.0,
+                                  color: Colors.redAccent,
+                                ),
                               children: <TextSpan>[
                                 TextSpan(
-                                  text: ' in ',
+                                  text: ' \t in \n',
+                                    style: TextStyle(
+                                      fontSize: 30.0,
+                                      fontWeight: FontWeight.w700,
+                                      color: Colors.amber,
+                                    ),
                                   children: <TextSpan>[
                                     TextSpan(
-                                      text: ' Touch...............',
-                                    )
-                                  ]
-                                )
-                              ]
-                            )
-                          ]
+                                      text: '\ttouch......',
+                                      style: TextStyle(
+                                        fontSize: 80.0,
+                                        color: Colors.blueAccent,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       ),
                       Align(
