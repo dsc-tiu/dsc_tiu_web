@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class TrackButton extends StatefulWidget {
   final String imagePath, url;
@@ -15,6 +16,15 @@ class _TrackButtonState extends State<TrackButton>
   final double scale;
   AnimationController controller;
   Animation<double> scaleAnimation;
+
+  _launchURL() async {
+  print('launch');
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
   @override
   void initState() {
     super.initState();
@@ -42,7 +52,7 @@ class _TrackButtonState extends State<TrackButton>
               controller.reverse();
           });
         },
-        onTap: () => print('Hello'),
+        onTap: () => _launchURL(),
         child: ScaleTransition(
           scale: scaleAnimation,
           child: Image.asset(
