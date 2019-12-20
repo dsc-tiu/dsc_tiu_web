@@ -10,17 +10,42 @@ class ContactUsScreen extends StatelessWidget {
           WebAppBar(),
           Expanded(
             child: Container(
-              color: Colors.blueAccent,
+              color: Colors.white,
               child: Row(
                 children: <Widget>[
                   Image.asset('asset/dsc_contact.jpg'),
-                  Align(
-                    alignment: Alignment.bottomRight,
-                    child: Container(
-                      height: MediaQuery.of(context).size.height/2,
-                      width: MediaQuery.of(context).size.width/2,
-                      color: Colors.greenAccent,
-                    ),
+                  Spacer(),
+                  Column(
+                    children: <Widget>[
+                      RichText(
+                        text: TextSpan(
+                          text: ' to ',
+                          children: <TextSpan>[
+                            TextSpan(
+                              text: ' get ',
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: ' in ',
+                                  children: <TextSpan>[
+                                    TextSpan(
+                                      text: ' Touch...............',
+                                    )
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        ),
+                      ),
+                      Align(
+                        alignment: Alignment.bottomRight,
+                        child: Container(
+                          height: MediaQuery.of(context).size.height/2,
+                          width: MediaQuery.of(context).size.width/2,
+                          color: Colors.greenAccent,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
