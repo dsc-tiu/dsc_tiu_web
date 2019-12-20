@@ -4,12 +4,36 @@ import 'package:flutter/material.dart';
 
 class EventScreen extends StatelessWidget {
   final List<TrackButton> trackButtons = [
-    TrackButton(imagePath: 'asset/android_logo.png', scale: 1.5),
-    TrackButton(imagePath: 'asset/cloud_logo.png', scale: 1.5),
-    TrackButton(imagePath: 'asset/flutter_logo.png', scale: 2.2),
-    TrackButton(imagePath: 'asset/web_logo.png', scale: 4.6),
-    TrackButton(imagePath: 'asset/ml_logo.png', scale: 1.1),
-    TrackButton(imagePath: 'asset/aog_logo.png', scale: 2.3),
+    TrackButton(
+      imagePath: 'asset/android_logo.png',
+      scale: 1.5,
+      url: 'https://developer.android.com/',
+    ),
+    TrackButton(
+      imagePath: 'asset/cloud_logo.png',
+      scale: 1.5,
+      url: 'https://cloud.google.com/',
+    ),
+    TrackButton(
+      imagePath: 'asset/flutter_logo.png',
+      scale: 2.2,
+      url: 'https://flutter.dev/',
+    ),
+    TrackButton(
+      imagePath: 'asset/web_logo.png',
+      scale: 4.6,
+      url: 'https://developers.google.com/web',
+    ),
+    TrackButton(
+      imagePath: 'asset/ml_logo.png',
+      scale: 1.1,
+      url: 'https://ai.google/',
+    ),
+    TrackButton(
+      imagePath: 'asset/aog_logo.png',
+      scale: 2.3,
+      url: 'https://console.actions.google.com/',
+    ),
   ];
   @override
   Widget build(BuildContext context) {
