@@ -34,17 +34,17 @@ class ContactUsScreen extends StatelessWidget {
                                 ),
                               children: <TextSpan>[
                                 TextSpan(
-                                  text: ' \t in \n',
+                                  text: ' \t in ',
                                     style: TextStyle(
-                                      fontSize: 30.0,
-                                      fontWeight: FontWeight.w700,
+                                      fontSize: 50.0,
                                       color: Colors.amber,
                                     ),
                                   children: <TextSpan>[
                                     TextSpan(
-                                      text: '\ttouch......',
+                                      text: ' touch......',
                                       style: TextStyle(
                                         fontSize: 80.0,
+                                        fontWeight: FontWeight.w700,
                                         color: Colors.blueAccent,
                                       ),
                                     ),
@@ -58,8 +58,11 @@ class ContactUsScreen extends StatelessWidget {
                       Align(
                         alignment: Alignment.bottomRight,
                         child: Container(
+                          padding: EdgeInsets.only(
+                            right: 20.0,
+                          ),
                           height: MediaQuery.of(context).size.height/2,
-                          width: MediaQuery.of(context).size.width/2,
+                          width: MediaQuery.of(context).size.width/2.5,
                           color: Colors.greenAccent,
                         ),
                       ),
