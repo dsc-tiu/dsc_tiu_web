@@ -20,15 +20,22 @@ class AppBarButtonModel extends StatefulWidget {
       );
 }
 
-class _AppBarButtonModelState extends State<AppBarButtonModel> {
+class _AppBarButtonModelState extends State<AppBarButtonModel>
+    with SingleTickerProviderStateMixin {
   final String buttonName;
   final Function onPressed;
   final Color hoverColor;
   bool isHovering;
+  AnimationController controller;
+  Animation<double> scaleAnimation;
   @override
   void initState() {
-    isHovering = false;
     super.initState();
+    isHovering = false;
+    controller =
+        AnimationController(vsync: this, duration: Duration(milliseconds: 80));
+    scaleAnimation = Tween(begin: 1.0, end: 1.5)
+        .animate(CurvedAnimation(curve: Curves.easeInOut, parent: controller));
   }
 
   _AppBarButtonModelState(this.buttonName, this.onPressed, this.hoverColor);
@@ -42,9 +49,13 @@ class _AppBarButtonModelState extends State<AppBarButtonModel> {
         onTap: onPressed,
         hoverColor: Colors.white,
         splashColor: hoverColor.withOpacity(0.3),
-        onHover: (_isHovering) {
+        onHover: (val) {
           setState(() {
-            isHovering = _isHovering ?? false;
+            isHovering = val ?? false;
+            if (val)
+              controller.forward();
+            else
+              controller.reverse();
           });
         },
         child: Container(
@@ -53,11 +64,14 @@ class _AppBarButtonModelState extends State<AppBarButtonModel> {
             vertical: 5.0,
           ),
           margin: const EdgeInsets.symmetric(horizontal: 12.0),
-          child: Text(
-            buttonName,
-            textScaleFactor: isHovering ? 1.5 : 1,
-            style: TextStyle(
-              color: isHovering ? hoverColor : Colors.black,
+          child: ScaleTransition(
+            scale: scaleAnimation,
+            child: Text(
+              buttonName,
+              // textScaleFactor: isHovering ? 1.5 : 1,
+              style: TextStyle(
+                color: isHovering ? hoverColor : Colors.black,
+              ),
             ),
           ),
         ),
