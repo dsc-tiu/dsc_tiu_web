@@ -1,10 +1,32 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
+  _SplashScreenState createState() => _SplashScreenState();
 }
 
-//todo a beautiful splash screen
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(
+      Duration(seconds: 3),
+      () => Navigator.of(context).pushNamed('/'),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Image.asset(
+          'asset/loading.gif',
+          scale: 0.5,
+        ),
+      ),
+    );
+  }
+}
