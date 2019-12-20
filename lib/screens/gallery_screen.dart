@@ -31,9 +31,10 @@ class _GalleryScreenState extends State<GalleryScreen> {
       imageList = convertDataToJson['images'];
       isLoaded = true;
     });
-
     return "Success";
   }
+
+  var _controller = ScrollController();
 
   @override
   Widget build(BuildContext context) {

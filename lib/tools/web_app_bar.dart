@@ -49,7 +49,7 @@ class WebAppBar extends StatelessWidget {
                 buttonName: 'Contact Us',
                 hoverColor: GoogleColors.yellow,
                 onPressed: () =>
-                    Navigator.pushNamed(context, '/contact-us--screen'),
+                    Navigator.pushNamed(context, '/contact-us-screen'),
               ),
             ],
           ),
