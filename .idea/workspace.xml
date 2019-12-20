@@ -33,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/screens/contact_us_screen.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+            <state relative-caret-position="180">
+              <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -250,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576845428023</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="adds style to rich text">
+      <created>1576846093538</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1576846093538</updated>
+    </task>
+    <task id="LOCAL-00015" summary="adjusts somethings">
+      <created>1576846305988</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1576846305988</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -308,7 +322,9 @@
     <MESSAGE value="adds a bouncing scroll physics" />
     <MESSAGE value="adds dsc_contact screen" />
     <MESSAGE value="adds the text" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds the text" />
+    <MESSAGE value="adds style to rich text" />
+    <MESSAGE value="adjusts somethings" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusts somethings" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -401,8 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/screens/contact_us_screen.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+        <state relative-caret-position="180">
+          <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
         </state>
       </provider>
     </entry>
