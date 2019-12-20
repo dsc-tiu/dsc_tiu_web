@@ -1,7 +1,6 @@
 import 'package:dsc_tiu_web/tools/track_button.dart';
 import 'package:dsc_tiu_web/tools/web_app_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 
 class EventScreen extends StatelessWidget {
   final List<TrackButton> trackButtons = [

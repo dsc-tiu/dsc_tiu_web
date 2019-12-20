@@ -9,7 +9,7 @@ import 'screens/home_screen.dart';
 main() => runApp(
       MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: '/contact-us-screen',
+        initialRoute: '/gallery-screen',
         routes: {
           '/': (_) => HomeScreen(),
           '/splash-screen': (_) => SplashScreen(),
