@@ -1,6 +1,6 @@
 import 'package:dsc_tiu_web/tools/web_app_bar.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../tools/social_media_button.dart';
 
 class ContactUsScreen extends StatelessWidget {
   @override
@@ -59,7 +59,7 @@ class ContactUsScreen extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(right:20.0),
+                        padding: const EdgeInsets.only(right: 20.0),
                         child: Align(
                           alignment: Alignment.bottomRight,
                           child: Card(
@@ -72,7 +72,10 @@ class ContactUsScreen extends StatelessWidget {
                               height: MediaQuery.of(context).size.height / 2,
                               width: MediaQuery.of(context).size.width / 2,
                               child: Padding(
-                                padding: const EdgeInsets.only(top: 90.0,left: 40.0,),
+                                padding: const EdgeInsets.only(
+                                  top: 90.0,
+                                  left: 40.0,
+                                ),
                                 child: Wrap(
                                   alignment: WrapAlignment.center,
                                   crossAxisAlignment: WrapCrossAlignment.center,
@@ -80,109 +83,41 @@ class ContactUsScreen extends StatelessWidget {
                                   runSpacing: 30.0,
                                   spacing: 40.0,
                                   children: <Widget>[
-                                    Card(
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(40.0),
-                                      ),
-                                      elevation: 50.0,
-                                      child: CircleAvatar(
-                                        radius: 40.0,
-                                        backgroundColor: Colors.white,
-                                        backgroundImage: AssetImage(
-                                          'asset/contact_facebook.png',
-                                        ),
-                                      ),
+                                    SocialMediaButton(
+                                      imagePath: 'asset/contact_facebook.png',
+                                      url: 'https://www.facebook.com/dsctiu/',
+                                      name: 'Facebook',
                                     ),
-                                    Card(
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(40.0),
-                                      ),
-                                      elevation: 30.0,
-                                      child: CircleAvatar(
-                                        radius: 40.0,
-                                        backgroundColor: Colors.white,
-                                        backgroundImage: AssetImage(
-                                          'asset/contact_twitter.png',
-                                        ),
-                                      ),
+                                    SocialMediaButton(
+                                      imagePath: 'asset/contact_twitter.png',
+                                      url: 'https://twitter.com/dsc_tiu',
+                                      name: 'Twitter',
                                     ),
-                                    Card(
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(40.0),
-                                      ),
-                                      elevation: 30.0,
-                                      child: CircleAvatar(
-                                        radius: 40.0,
-                                        backgroundColor: Colors.white,
-                                        backgroundImage: AssetImage(
-                                          'asset/contact_github.png',
-                                        ),
-                                      ),
+                                    SocialMediaButton(
+                                      imagePath: 'asset/contact_github.png',
+                                      url: 'https://github.com/dsc-tiu',
+                                      name: 'Github',
                                     ),
-                                    Card(
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(40.0),
-                                      ),
-                                      elevation: 30.0,
-                                      child: CircleAvatar(
-                                        radius: 40.0,
-                                        backgroundColor: Colors.white,
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            image: DecorationImage(
-                                              fit: BoxFit.fill,
-                                              image: AssetImage('asset/contact_linkedin.png'),
-                                            )
-                                          ),
-                                        ),
-                                      ),
+                                    SocialMediaButton(
+                                      imagePath: 'asset/contact_linkedin.png',
+                                      url: 'https://www.linkedin.com/company/developer-student-clubs-techno-india-university/',
+                                      name: 'Linkedin',
                                     ),
-                                    Card(
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(40.0),
-                                      ),
-                                      elevation: 30.0,
-                                      child: CircleAvatar(
-                                        radius: 40.0,
-                                        backgroundColor: Colors.white,
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(10.0),
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                                image: DecorationImage(
-                                                  fit: BoxFit.contain,
-                                                  image: AssetImage('asset/contact_gmail.png'),
-                                                )
-                                            ),
-                                          ),
-                                        ),
-                                      ),
+                                    SocialMediaButton(
+                                      imagePath: 'asset/contact_gmail.png',
+                                      url: '',
+                                      name: 'dsctechnoindiauniversity@gmail.com',
                                     ),
-                                    Card(
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(40.0),
-                                      ),
-                                      elevation: 30.0,
-                                      child: CircleAvatar(
-                                        radius: 40.0,
-                                        backgroundColor: Colors.white,
-                                        backgroundImage: AssetImage(
-                                          'asset/contact_medium.png',
-                                        ),
-                                      ),
+                                    SocialMediaButton(
+                                      imagePath: 'asset/contact_medium.png',
+                                      url:
+                                          'https://medium.com/@dsctechnoindiauniversity',
+                                          name: 'Medium',
                                     ),
-                                    Card(
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(40.0),
-                                      ),
-                                      elevation: 30.0,
-                                      child: CircleAvatar(
-                                        radius: 40.0,
-                                        backgroundColor: Colors.white,
-                                        backgroundImage: AssetImage(
-                                          'asset/contact_map.png',
-                                        ),
-                                      ),
+                                    SocialMediaButton(
+                                      imagePath: 'asset/contact_map.png',
+                                      url: 'https://g.page/tiuwestbengal?share',
+                                      name: 'Maps',
                                     ),
                                   ],
                                 ),
