@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:draggable_scrollbar/draggable_scrollbar.dart';
 import 'package:dsc_tiu_web/tools/web_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
@@ -11,19 +12,18 @@ class GalleryScreen extends StatefulWidget {
 }
 
 class _GalleryScreenState extends State<GalleryScreen> {
-
   List imageList;
   bool isLoaded = false;
-  final String imageUrl = 'https://raw.githubusercontent.com/samrat19/DartLearning/master/photos_api';
+  final String imageUrl =
+      'https://raw.githubusercontent.com/samrat19/DartLearning/master/photos_api';
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     this.getJsonData();
   }
 
-  Future<String> getJsonData() async{
+  Future<String> getJsonData() async {
     var response = await http
         .get(Uri.encodeFull(imageUrl), headers: {"Accept": "application/json"});
     setState(() {
@@ -43,25 +43,32 @@ class _GalleryScreenState extends State<GalleryScreen> {
         children: <Widget>[
           WebAppBar(),
           Expanded(
-            child: StaggeredGridView.countBuilder(
-              crossAxisCount: 6,
-              itemCount: imageList == null ? 0 : imageList.length,
-              crossAxisSpacing: 15.0,
-              mainAxisSpacing: 15.0,
-              itemBuilder: (_, index) => Material(
-                child: isLoaded == false ? Image.network(
-                  'https://youth-time.eu/wp-content/uploads/2019/05/Google-Developer-Student-Club.jpg',
-                  fit: BoxFit.cover,
-                ):Image.network(
-                  imageList[index]['image'],
-                  fit: BoxFit.cover,
+            child: DraggableScrollbar.rrect(
+              alwaysVisibleScrollThumb: true,
+              controller: _controller,
+              child: StaggeredGridView.countBuilder(
+                controller: _controller,
+                crossAxisCount: 6,
+                itemCount: imageList == null ? 0 : imageList.length,
+                crossAxisSpacing: 15.0,
+                mainAxisSpacing: 15.0,
+                itemBuilder: (_, index) => Material(
+                  child: isLoaded == false
+                      ? Image.network(
+                          'https://youth-time.eu/wp-content/uploads/2019/05/Google-Developer-Student-Club.jpg',
+                          fit: BoxFit.cover,
+                        )
+                      : Image.network(
+                          imageList[index]['image'],
+                          fit: BoxFit.cover,
+                        ),
+                  elevation: 5.0,
+                  color: Colors.white24,
+                  borderRadius: BorderRadius.circular(15.0),
                 ),
-                elevation: 5.0,
-                color: Colors.white24,
-                borderRadius: BorderRadius.circular(15.0),
+                staggeredTileBuilder: (index) =>
+                    StaggeredTile.count(2, index.isEven ? 2 : 1),
               ),
-              staggeredTileBuilder: (index) =>
-                  StaggeredTile.count(2, index.isEven ? 2 : 1),
             ),
           ),
         ],
