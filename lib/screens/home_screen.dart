@@ -1,5 +1,5 @@
 import 'dart:ui';
-import 'package:dsc_tiu_web/tools/web_app_bar.dart';
+import 'package:dsc_tiu_web/tools/home_app_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Column(
         children: <Widget>[
-          WebAppBar(),
+          HomeAppBar(),
           Expanded(
             child: Container(
               height: MediaQuery.of(context).size.height,

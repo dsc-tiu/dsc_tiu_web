@@ -24,24 +24,26 @@ class SocialMediaButton extends StatelessWidget {
     return Tooltip(
       message: name,
       child: GestureDetector(
-        onTap: (){
+        onTap: () {
           if (url.isNotEmpty || url != null)
-          _launchURL();
-          else{
+            _launchURL();
+          else {
             Clipboard.setData(ClipboardData(text: url))
-            .catchError((e) {})
-            .whenComplete(() {
-          Scaffold.of(context).showSnackBar(SnackBar(
-            content: Text('Email has been copied to your clipboard'),
-          ));
-        });
+                .catchError((e) {})
+                .whenComplete(() {
+              Scaffold.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Email has been copied to your clipboard'),
+                ),
+              );
+            });
           }
         },
         child: Card(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(40.0),
           ),
-          elevation: 30.0,
+          elevation: 50.0,
           child: CircleAvatar(
             radius: 40.0,
             backgroundColor: Colors.white,

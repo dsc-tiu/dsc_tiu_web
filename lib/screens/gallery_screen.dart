@@ -77,5 +77,3 @@ class _GalleryScreenState extends State<GalleryScreen> {
     );
   }
 }
-
-//todo images of our event with specific name of the event
