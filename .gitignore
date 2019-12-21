@@ -4,4 +4,4 @@
 .pub-cache/
 .pub/
 /build/
-/.idea/
+.idea/

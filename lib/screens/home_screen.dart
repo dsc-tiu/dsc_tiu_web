@@ -1,10 +1,26 @@
 import 'dart:ui';
-
 import 'package:dsc_tiu_web/tools/web_app_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+
+  final String formUrl = 'https://goo.gl/forms/z8alBbbXQxSDpjNg1';
+
+  _launchForm() async{
+    if (await canLaunch(formUrl)) {
+      await launch(formUrl);
+    } else {
+      throw 'Could not launch $formUrl';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,23 +51,26 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(
                     height: 20.0,
                   ),
-                  Text.rich(
-                    TextSpan(
-                      text: 'Register',
-                      style: TextStyle(
-                        fontSize: 70.0,
-                        color: Colors.blue,
-                      ),
-                      children: <TextSpan>[
-                        TextSpan(
-                          text: 'with us',
-                          style: TextStyle(
-                            fontSize: 60.0,
-                            color: Colors.grey[600],
-                            decoration: TextDecoration.underline,
-                          ),
+                  GestureDetector(
+                    onTap: ()=>_launchForm(),
+                    child: Text.rich(
+                      TextSpan(
+                        text: 'Register',
+                        style: TextStyle(
+                          fontSize: 70.0,
+                          color: Colors.blue,
                         ),
-                      ]
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: 'with us',
+                            style: TextStyle(
+                              fontSize: 60.0,
+                              color: Colors.grey[600],
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
+                        ]
+                      ),
                     ),
                   ),
                   Image(
@@ -67,5 +86,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
-//todo take some idea from our google template web page
