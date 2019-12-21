@@ -47,6 +47,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
               alwaysVisibleScrollThumb: true,
               controller: _controller,
               child: StaggeredGridView.countBuilder(
+                physics: BouncingScrollPhysics(),
                 controller: _controller,
                 crossAxisCount: 6,
                 itemCount: imageList == null ? 0 : imageList.length,
