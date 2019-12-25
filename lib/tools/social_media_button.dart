@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'hover_effects.dart';
 
 class SocialMediaButton extends StatelessWidget {
   final String imagePath, url, name;
@@ -46,7 +47,7 @@ class SocialMediaButton extends StatelessWidget {
           elevation: 50.0,
           child: CircleAvatar(
             radius: 40.0,
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.transparent,
             child: Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
@@ -55,7 +56,7 @@ class SocialMediaButton extends StatelessWidget {
               )),
             ),
           ),
-        ),
+        ).showCursorOnHover.moveUpOnHover,
       ),
     );
   }

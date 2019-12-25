@@ -1,40 +1,8 @@
-import 'package:dsc_tiu_web/tools/track_button.dart';
+import 'package:dsc_tiu_web/tools/track_name_model.dart';
 import 'package:dsc_tiu_web/tools/web_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class EventScreen extends StatelessWidget {
-  final List<TrackButton> trackButtons = [
-    TrackButton(
-      imagePath: 'asset/android_logo.png',
-      scale: 1.5,
-      url: 'https://developer.android.com/',
-    ),
-    TrackButton(
-      imagePath: 'asset/cloud_logo.png',
-      scale: 1.5,
-      url: 'https://cloud.google.com/',
-    ),
-    TrackButton(
-      imagePath: 'asset/flutter_logo.png',
-      scale: 2.2,
-      url: 'https://flutter.dev/',
-    ),
-    TrackButton(
-      imagePath: 'asset/web_logo.png',
-      scale: 4.6,
-      url: 'https://developers.google.com/web',
-    ),
-    TrackButton(
-      imagePath: 'asset/ml_logo.png',
-      scale: 1.1,
-      url: 'https://ai.google/',
-    ),
-    TrackButton(
-      imagePath: 'asset/aog_logo.png',
-      scale: 2.3,
-      url: 'https://console.actions.google.com/',
-    ),
-  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,8 +14,8 @@ class EventScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 image: DecorationImage(
-                  fit: BoxFit.contain,
-                  image: AssetImage('asset/event_background.jpg'),
+                  fit: BoxFit.cover,
+                  image: AssetImage('asset/custom_background.png'),
                 ),
               ),
               child: Padding(
@@ -56,57 +24,127 @@ class EventScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Currently we are running these tracks.................',
+                      'The technologies we are currently working on......',
                       style: TextStyle(
-                        fontSize: 55.0,
+                        fontSize: 35.0,
                         color: Colors.grey[600],
+                        fontWeight: FontWeight.w600,
                       ),
-                      textAlign: TextAlign.left,
                     ),
-                    Spacer(),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: <Widget>[
-                        trackButtons[0],
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width / 6,
-                        ),
-                        trackButtons[1],
-                      ],
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height / 8,
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width / 8,
+                        Container(
+                          child: Column(
+                            children: <Widget>[
+                              Padding(
+                                padding: const EdgeInsets.only(left: 20.0),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: <Widget>[
+                                    //trackButtons[0],
+                                    TrackNameModel(
+                                      buttonImage: "asset/android_logo.png",
+                                      buttonName: "Android Development",
+                                      url: "https://developer.android.com/",
+                                    ),
+                                    SizedBox(
+                                      width: MediaQuery.of(context).size.width /
+                                          18,
+                                    ),
+                                    TrackNameModel(
+                                      buttonImage: "asset/cloud_logo.png",
+                                      buttonName: "Cloud Computing",
+                                      url: "https://cloud.google.com/",
+                                    )
+                                  ],
+                                ),
+                              ),
+                              SizedBox(
+                                height: MediaQuery.of(context).size.height / 14,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 20.0),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: <Widget>[
+                                    TrackNameModel(
+                                      buttonImage: "asset/flutter_logo.png",
+                                      buttonName: "Flutter Development",
+                                      url: "https://flutter.dev/",
+                                    ),
+                                    SizedBox(
+                                      width: MediaQuery.of(context).size.width /
+                                          18,
+                                    ),
+                                    TrackNameModel(
+                                      buttonImage: "asset/web_logo.png",
+                                      buttonName: "Web Development",
+                                      url: "https://developers.google.com/web",
+                                    )
+                                  ],
+                                ),
+                              ),
+                              SizedBox(
+                                height: MediaQuery.of(context).size.height / 14,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 20.0),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: <Widget>[
+                                    //trackButtons[4],
+                                    TrackNameModel(
+                                      buttonImage: "asset/ml_logo.png",
+                                      buttonName: "Machine Learning",
+                                      url: "https://ai.google/",
+                                    ),
+                                    SizedBox(
+                                      width: MediaQuery.of(context).size.width /
+                                          18,
+                                    ),
+                                    TrackNameModel(
+                                      buttonImage: "asset/aog_logo.png",
+                                      buttonName: "Action on Google",
+                                      url:
+                                          "https://console.actions.google.com/",
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                        trackButtons[2],
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width / 5,
-                        ),
-                        trackButtons[3],
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: <Widget>[
-                        trackButtons[4],
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width / 9,
-                        ),
-                        trackButtons[5],
+                        Align(
+                          child: Container(
+                            child: Padding(
+                              padding: EdgeInsets.only(
+                                  left:
+                                      MediaQuery.of(context).size.width * 0.08),
+                              child: Image.asset(
+                                  "asset/mobile_app_development.gif"),
+                            ),
+                            alignment: Alignment.centerRight,
+                          ),
+                        )
                       ],
                     ),
                     Spacer(),
                     Align(
                       alignment: Alignment.bottomRight,
-                      child: Text(
-                        '-Powered by Google Developers',
-                        style: TextStyle(
-                          fontSize: 40.0,
+                      child: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Text(
+                          '-Powered by Google Developers',
+                          style: TextStyle(
+                              fontSize: 25.0,
+                              color: Colors.grey[600],
+                              ),
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),

@@ -2,6 +2,7 @@ import 'package:dsc_tiu_web/tools/app_bar_button_model.dart';
 import 'package:dsc_tiu_web/utils/google_colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'hover_effects.dart';
 
 class HomeAppBar extends StatelessWidget {
   @override
@@ -13,9 +14,9 @@ class HomeAppBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Image.asset(
-            'asset/dsc_logo_horizontal.png',
-            height: 50.0,
-          ),
+            'asset/dsc_large.png',
+            height: 45.0,
+          ).showCursorOnHover,
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[

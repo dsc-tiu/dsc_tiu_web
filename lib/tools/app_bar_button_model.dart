@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'hover_effects.dart';
 
 class AppBarButtonModel extends StatefulWidget {
   final String buttonName;
@@ -34,7 +35,7 @@ class _AppBarButtonModelState extends State<AppBarButtonModel>
     isHovering = false;
     controller =
         AnimationController(vsync: this, duration: Duration(milliseconds: 80));
-    scaleAnimation = Tween(begin: 1.0, end: 1.5)
+    scaleAnimation = Tween(begin: 1.0, end: 1.3)
         .animate(CurvedAnimation(curve: Curves.easeInOut, parent: controller));
   }
 
@@ -69,13 +70,17 @@ class _AppBarButtonModelState extends State<AppBarButtonModel>
             child: Text(
               buttonName,
               // textScaleFactor: isHovering ? 1.5 : 1,
-              style: TextStyle(
-                color: isHovering ? hoverColor : Colors.black,
+              style:
+              TextStyle(
+                color: isHovering ? hoverColor : Colors.grey[800],
+                fontFamily: "Source_Sans_Pro/SourceSansPro-SemiBold",
+                fontWeight: FontWeight.w600,
+                fontSize: 15.0
               ),
             ),
           ),
         ),
       ),
-    );
+    ).showCursorOnHover;
   }
 }

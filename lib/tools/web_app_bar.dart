@@ -2,6 +2,7 @@ import 'package:dsc_tiu_web/tools/app_bar_button_model.dart';
 import 'package:dsc_tiu_web/utils/google_colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'hover_effects.dart';
 
 class WebAppBar extends StatelessWidget {
   @override
@@ -20,11 +21,11 @@ class WebAppBar extends StatelessWidget {
                 Navigator.of(context).pushNamed('/');
               },
               child: Image.asset(
-                'asset/dsc_logo_horizontal.png',
-                height: 50.0,
+                'asset/dsc_large.png',
+                height: 45.0,
               ),
             ),
-          ),
+          ).showCursorOnHover,
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[

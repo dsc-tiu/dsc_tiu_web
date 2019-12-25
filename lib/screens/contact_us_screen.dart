@@ -111,8 +111,8 @@ class ContactUsScreen extends StatelessWidget {
                                     SocialMediaButton(
                                       imagePath: 'asset/contact_medium.png',
                                       url:
-                                          'https://medium.com/@dsctechnoindiauniversity',
-                                          name: 'Medium',
+                                      'https://medium.com/@dsctechnoindiauniversity',
+                                      name: 'Medium',
                                     ),
                                     SocialMediaButton(
                                       imagePath: 'asset/contact_map.png',

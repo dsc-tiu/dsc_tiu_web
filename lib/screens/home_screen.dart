@@ -2,6 +2,8 @@ import 'dart:ui';
 import 'package:dsc_tiu_web/tools/home_app_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:dsc_tiu_web/tools/hover_effects.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -53,25 +55,33 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   GestureDetector(
                     onTap: ()=>_launchForm(),
-                    child: Text.rich(
-                      TextSpan(
-                        text: 'Register',
-                        style: TextStyle(
-                          fontSize: 70.0,
-                          color: Colors.blue,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+
+                          colors: [
+                            Colors.blue,
+                            Colors.blueAccent[100],
+                          ]
                         ),
-                        children: <TextSpan>[
-                          TextSpan(
-                            text: 'with us',
-                            style: TextStyle(
-                              fontSize: 60.0,
-                              color: Colors.grey[600],
-                              decoration: TextDecoration.underline,
-                            ),
-                          ),
-                        ]
+                        borderRadius: BorderRadius.circular(12),
                       ),
-                    ),
+                      child: Padding(
+                        padding: EdgeInsets.fromLTRB(20,10,20,10),
+                        child: Text(" Register with Us    ",
+                          style: GoogleFonts.rubik(
+                            fontWeight: FontWeight.w500,
+                            fontStyle: FontStyle.normal,
+                            fontSize: 40,
+                            textStyle: TextStyle(
+                              color: Colors.white
+                            )
+                          )
+                        ),
+                      ),
+                    ).showCursorOnHover,
                   ),
                   Image(
                     height: 230.0,

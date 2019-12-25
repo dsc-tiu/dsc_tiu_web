@@ -14,13 +14,15 @@ description: DSC TIU Website will be live
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.6.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   http:
   draggable_scrollbar: ^0.0.4
+  gradient_widgets: ^0.5.1
+  google_fonts: ^0.2.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -62,10 +64,11 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+  # - family: Source_Sans_Pro
+  #    fonts:
+  #     - asset: web/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf
+  #     - asset: web/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf
+  #     - asset: web/fonts/Source_Sans_Pro/SourceSansPro-SemiBoldItalic.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
